@@ -4,7 +4,6 @@ import NavWorldWise from "./NavWorldWise";
 const SideBar = () => {
   return (
     <div>
-      <h3>Side Bar</h3>
       <NavWorldWise />
       <Outlet />
     </div>
