@@ -4,7 +4,7 @@ const NavPage = () => {
   return (
     <div>
       <ul style={{ listStyle: "none", display: "flex" }}>
-        <img src="logo.png" />
+        <img src="/logo.png" />
         <li style={{ padding: "10px" }}>
           <NavLink to="/">Home</NavLink>
         </li>
