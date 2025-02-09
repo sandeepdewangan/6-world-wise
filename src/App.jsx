@@ -9,6 +9,7 @@ import { useEffect, useState } from "react";
 import Cities from "./components/WorldWise/Cities";
 import Countries from "./components/WorldWise/Countries";
 import City from "./components/WorldWise/City";
+import Form from "./components/WorldWise/Form";
 
 export default function App() {
   const [cities, setCities] = useState([]);
@@ -48,7 +49,7 @@ export default function App() {
             element={<Cities cities={cities} isLoading={isLoading} />}
           />
           <Route path="cities/:id" element={<City />} />
-          <Route path="form" element={<p1>Form</p1>} />
+          <Route path="form" element={<Form />} />
           <Route
             path="countries"
             element={<Countries cities={cities} isLoading={isLoading} />}
