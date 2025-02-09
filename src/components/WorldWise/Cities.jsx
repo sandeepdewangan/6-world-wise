@@ -7,7 +7,9 @@ const Cities = ({ cities, isLoading }) => {
       {cities.map((city) => (
         <div key={city.id}>
           <hr />
-          <Link to={city.id}>
+          <Link
+            to={`${city.id}?lat=${city.position.lat}&lng=${city.position.lng}`}
+          >
             <p>
               {city.emoji} {city.cityName}
             </p>
