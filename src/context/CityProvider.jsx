@@ -6,7 +6,7 @@ const CitiesContext = createContext();
 const CitiesProvider = ({ children }) => {
   const [cities, setCities] = useState([]);
   const [isLoading, setIsLoading] = useState();
-  const [currentCity, setCurrentCity] = useState();
+  const [currentCity, setCurrentCity] = useState({});
 
   useEffect(function () {
     async function fetchCities() {
@@ -25,8 +25,6 @@ const CitiesProvider = ({ children }) => {
   }, []);
 
   async function getCityById(id) {
-    console.log(`http://localhost:9000/cities/${id}`);
-
     try {
       setIsLoading(true);
       const res = await fetch(`http://localhost:9000/cities/${id}`);
