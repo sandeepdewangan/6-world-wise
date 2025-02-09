@@ -1,4 +1,8 @@
-const Countries = ({ cities, isLoading }) => {
+import { useCities } from "../../context/CityProvider";
+
+const Countries = () => {
+  // STEP 03
+  const { cities, isLoading } = useCities();
   if (isLoading) return <p>Loading...</p>;
 
   const countries = cities.reduce((arr, city) => {
@@ -8,8 +12,6 @@ const Countries = ({ cities, isLoading }) => {
       return arr;
     }
   }, []);
-
-  console.log(countries);
 
   return countries.map((item, index) => (
     <p key={index}>

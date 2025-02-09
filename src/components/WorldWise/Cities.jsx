@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
+import { useCities } from "../../context/CityProvider";
 
-const Cities = ({ cities, isLoading }) => {
+const Cities = () => {
+  const { cities, isLoading } = useCities();
   if (isLoading) return <p>Loading...</p>;
   return (
     <div>
