@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Cities = ({ cities, isLoading }) => {
   if (isLoading) return <p>Loading...</p>;
   return (
@@ -5,10 +7,12 @@ const Cities = ({ cities, isLoading }) => {
       {cities.map((city) => (
         <div key={city.id}>
           <hr />
-          <p>
-            {city.emoji} {city.cityName}
-          </p>
-          <p>{city.date}</p>
+          <Link to={city.id}>
+            <p>
+              {city.emoji} {city.cityName}
+            </p>
+            <p>{city.date}</p>
+          </Link>
         </div>
       ))}
     </div>
