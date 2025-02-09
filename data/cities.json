@@ -36,17 +36,18 @@
       },
       "id": 98443197
     },
+    
     {
-      "cityName": "Nijar",
-      "country": "Spain",
+      "cityName": "Raipur",
+      "country": "India",
       "emoji": "🇪🇸",
-      "date": "2023-04-03T07:47:59.202Z",
-      "notes": "",
+      "date": "2025-04-03T07:47:59.202Z",
+      "notes": "Raipurians are best",
       "position": {
-        "lat": "36.967508314568164",
-        "lng": "-2.13128394200588"
+        "lat": "21.250000",
+        "lng": "81.629997"
       },
-      "id": 98443198
+      "id": 98443195
     }
   ]
 }
